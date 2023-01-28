@@ -10,12 +10,13 @@ class Upx < Formula
   head "https://github.com/upx/upx.git", branch: "devel"
 
   depends_on "ucl" => :build
+  depends_on "cmake" => :build
 
   uses_from_macos "zlib"
 
   def install
-    system "make", "all"
-    bin.install "src/upx.out" => "upx"
+    system "make"
+    bin.install "build/release/upx" => "upx"
     man1.install "doc/upx.1"
   end
 
