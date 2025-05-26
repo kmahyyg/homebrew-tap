@@ -3,8 +3,8 @@ require 'formula'
 class Upx < Formula
   desc "Compress/expand executable files"
   homepage "https://upx.github.io/"
-  url "https://github.com/upx/upx/releases/download/v4.0.1/upx-4.0.1-src.tar.xz"
-  sha256 "77003c8e2e29aa9804e2fbaeb30f055903420b3e01d95eafe01aed957fb7e190"
+  url "https://github.com/upx/upx/releases/download/v5.0.1/upx-5.0.1-src.tar.xz"
+  sha256 "2b11323a9f6c7f0247a4936deee35afb486a2fdf808a5bc4abf10a085ec884d9"
   license "GPL-2.0-or-later"
   revision 1
   head "https://github.com/upx/upx.git", branch: "devel"
