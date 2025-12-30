@@ -1,3 +1,4 @@
+
 cask "imhex" do
   arch arm: "arm64", intel: "x86_64"
 
@@ -20,7 +21,7 @@ cask "imhex" do
 
   app "ImHex.app"
 
-  def post_install
+  postflight do
      system "sudo", "xattr", "-r", "-d", "com.apple.quarantine", "/Applications/ImHex.app"
      system "sudo", "xattr", "-r", "-d", "com.apple.provenance", "/Applications/ImHex.app"
   end
