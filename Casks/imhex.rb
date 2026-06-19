@@ -6,7 +6,7 @@ cask "imhex" do
   sha256 arm:   "cbe57f8f16fd9a63bf0bd393d2db695ed201948a8f9167fd10b4af96847b0ee8",
          intel: "4acd57408770cdfe533fb277f8746a5fdb9cb2048a9b7f8295931aafea97bd0e"
 
-  on_arm do
+  on_macos do
     depends_on macos: ":ventura"
   end
 
