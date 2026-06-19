@@ -7,10 +7,7 @@ cask "imhex" do
          intel: "4acd57408770cdfe533fb277f8746a5fdb9cb2048a9b7f8295931aafea97bd0e"
 
   on_arm do
-    depends_on macos: ">= :ventura"
-  end
-  on_intel do
-    depends_on macos: ">= :sequoia"
+    depends_on macos: ":ventura"
   end
 
   url "https://github.com/WerWolv/ImHex/releases/download/v#{version}/imhex-#{version}-macOS-#{arch}.dmg",
